@@ -1,0 +1,17 @@
+{
+    "name": "projecteight/magento1-testing-using-phpunit",
+    "description": "Magento Community 1.9.3.0",
+    "license": "proprietary",
+    "extra": {
+        "magento-root-dir": "www"
+    },
+    "require": {
+        "magento-hackathon/magento-composer-installer": "~3.0",
+        "aydin-hassan/magento-core-composer-installer": "~1.2",
+        "firegento/magento": "~1.9.3"
+    },
+    "require-dev": {
+        "inchoo/php7": "1.9.2.4-dev",
+        "phpunit/phpunit": "4.1"
+    }
+}
