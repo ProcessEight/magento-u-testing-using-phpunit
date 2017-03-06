@@ -1,18 +1,10 @@
-Index: tests/unit/boostrap.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
---- tests/unit/boostrap.php	(revision 83421016814cf397c1e87d4c52fafe8c08619fb5)
-+++ tests/unit/boostrap.php	(revision )
-@@ -1,0 +1,0 @@
 Index: tests/integration/Training/Example/Helper/DataTest.php
 IDEA additional info:
 Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
 --- tests/integration/Training/Example/Helper/DataTest.php	(revision 83421016814cf397c1e87d4c52fafe8c08619fb5)
-+++ tests/integration/Training/Example/Helper/DataTest.php	(revision )
++++ tests/integration/Training/Example/Helper/DataTest.php	
 @@ -1,6 +1,6 @@
  <?php
  
@@ -70,7 +62,7 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
 --- tests/unit/phpunit-unit.xml	(revision 83421016814cf397c1e87d4c52fafe8c08619fb5)
-+++ tests/unit/phpunit-unit.xml	(revision )
++++ tests/unit/phpunit-unit.xml	
 @@ -1,30 +1,16 @@
  <?xml version="1.0" encoding="UTF-8"?>
  <phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -107,12 +99,9 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
      <php>
          <const name="PHPUNIT_TESTSUITE" value="true"/>
 Index: tests/Training/Example/TestCase.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
 ===================================================================
---- tests/Training/Example/TestCase.php	(revision )
-+++ tests/Training/Example/TestCase.php	(revision )
+--- tests/Training/Example/TestCase.php	
++++ tests/Training/Example/TestCase.php	
 @@ -0,0 +1,81 @@
 +<?php
 +
@@ -196,25 +185,13 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 +	}
 +}
 \ No newline at end of file
-Index: .gitignore
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
---- .gitignore	(revision 83421016814cf397c1e87d4c52fafe8c08619fb5)
-+++ .gitignore	(revision )
-@@ -1,4 +1,3 @@
--.idea
- logs
- vendor
- www
 Index: tests/integration/Training/Example/IntegrationTestCase.php
 IDEA additional info:
 Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
 --- tests/integration/Training/Example/IntegrationTestCase.php	(revision 83421016814cf397c1e87d4c52fafe8c08619fb5)
-+++ tests/integration/Training/Example/IntegrationTestCase.php	(revision )
++++ tests/integration/Training/Example/IntegrationTestCase.php	
 @@ -10,7 +10,7 @@
  		Mage::reset();
  		Mage::setIsDeveloperMode( true );
@@ -226,12 +203,9 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
  		// Fix error handler
 \ No newline at end of file
 Index: tests/Training/Example/Controller/Response/Http.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
 ===================================================================
---- tests/Training/Example/Controller/Response/Http.php	(revision )
-+++ tests/Training/Example/Controller/Response/Http.php	(revision )
+--- tests/Training/Example/Controller/Response/Http.php	
++++ tests/Training/Example/Controller/Response/Http.php	
 @@ -0,0 +1,35 @@
 +<?php
 +
@@ -275,7 +249,7 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
 --- tests/integration/bootstrap.php	(revision 83421016814cf397c1e87d4c52fafe8c08619fb5)
-+++ tests/integration/bootstrap.php	(revision )
++++ tests/integration/bootstrap.php	
 @@ -2,16 +2,13 @@
  
  require_once __DIR__ . '/../../www/app/Mage.php';
@@ -304,12 +278,9 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 +
 +Training_Example_TestCase::resetMagento();
 Index: tests/integration/Training/Example/Dispatch/HomeTest.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
 ===================================================================
---- tests/integration/Training/Example/Dispatch/HomeTest.php	(revision )
-+++ tests/integration/Training/Example/Dispatch/HomeTest.php	(revision )
+--- tests/integration/Training/Example/Dispatch/HomeTest.php	
++++ tests/integration/Training/Example/Dispatch/HomeTest.php	
 @@ -0,0 +1,30 @@
 +<?php
 +
@@ -348,7 +319,7 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
 --- tests/integration/phpunit-integration.xml	(revision 83421016814cf397c1e87d4c52fafe8c08619fb5)
-+++ tests/integration/phpunit-integration.xml	(revision )
++++ tests/integration/phpunit-integration.xml	
 @@ -1,46 +1,36 @@
  <?xml version="1.0" encoding="UTF-8"?>
  <phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -422,12 +393,9 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 +    </php>
  </phpunit>
 Index: tests/Training/Example/Config.php
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
 ===================================================================
---- tests/Training/Example/Config.php	(revision )
-+++ tests/Training/Example/Config.php	(revision )
+--- tests/Training/Example/Config.php	
++++ tests/Training/Example/Config.php	
 @@ -0,0 +1,25 @@
 +<?php
 +

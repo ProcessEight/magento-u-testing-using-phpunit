@@ -78,6 +78,8 @@ class Training_Example_DataTest extends PHPUnit_Framework_TestCase
 		);
 
 		$value = call_user_func( array( $helper, $method ) );
+		// Fix PhpStorm bug where it appends its own PHPUnit bootstrapping script to the end of the base URL
+		$value = str_replace('ide-phpunit.php/', '', $value);
 		$expected = 'http://magento1-testing-using-phpunit.local/training/example/redirect/';
 
 		$this->assertSame( $expected, $value );

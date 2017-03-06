@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="90213b3e-2c4c-496c-9a0c-fd88fccdd120" name="Default" comment="Added .idea folder to git so it remembers settings; Fixed bug with typo in name of bootstrap.php file">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/unit/boostrap.php" afterPath="$PROJECT_DIR$/tests/unit/bootstrap.php" />
+    <list default="true" id="90213b3e-2c4c-496c-9a0c-fd88fccdd120" name="Default" comment="Renamed bootstrap files to use Example TestFramework namespace; Updated tests; Fix PhpStorm bug where it appends its own PHPUnit bootstrapping script to the end of the base URL">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/integration/Example/TestFramework/Config.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/integration/Example/TestFramework/Controller/Response/Http.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/integration/Example/TestFramework/TestCase.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/integration/Training/Example/Dispatch/HomeTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/shelf/Working_through_unit_6/shelved.patch" afterPath="$PROJECT_DIR$/.idea/shelf/Working_through_unit_6/shelved.patch" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/integration/Training/Example/Helper/DataTest.php" afterPath="$PROJECT_DIR$/tests/integration/Training/Example/Helper/DataTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/integration/bootstrap.php" afterPath="$PROJECT_DIR$/tests/integration/bootstrap.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/integration/phpunit-integration.xml" afterPath="$PROJECT_DIR$/tests/integration/phpunit-integration.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/unit/phpunit-unit.xml" afterPath="$PROJECT_DIR$/tests/unit/phpunit-unit.xml" />
     </list>
     <ignored path="magento1-testing-using-phpunit.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,11 +33,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="bootstrap.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/unit/bootstrap.php">
+      <file leaf-file-name="DataTest.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/unit/Training/Example/Helper/DataTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state relative-caret-position="390">
+              <caret line="31" column="58" selection-start-line="31" selection-start-column="58" selection-end-line="31" selection-end-column="58" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DataTest.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/integration/Training/Example/Helper/DataTest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="803">
+              <caret line="82" column="65" selection-start-line="82" selection-start-column="65" selection-end-line="82" selection-end-column="65" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bootstrap.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/integration/bootstrap.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -49,74 +73,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="phpunit-integration.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/integration/phpunit-integration.xml">
+      <file leaf-file-name="TestCase.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tests/integration/Example/TestFramework/TestCase.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="264">
-                <caret line="32" column="43" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DataTest.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tests/integration/Training/Example/Helper/DataTest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="26" column="49" selection-start-line="26" selection-start-column="49" selection-end-line="26" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bootstrap.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/integration/bootstrap.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="3" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Page.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/app/code/core/Mage/Cms/Block/Page.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1245">
-              <caret line="124" column="0" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Abstract.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/app/code/core/Mage/Core/Block/Abstract.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4920">
-              <caret line="582" column="0" selection-start-line="582" selection-start-column="0" selection-end-line="582" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Wrapper.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/app/code/core/Mage/Page/Block/Html/Wrapper.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+            <state relative-caret-position="346">
+              <caret line="66" column="29" selection-start-line="66" selection-start-column="29" selection-end-line="66" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -147,14 +108,18 @@
         <option value="$PROJECT_DIR$/tests/Training/Example/Controller/Response/Http.php" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_7.php" />
         <option value="$PROJECT_DIR$/tests/integration/Training/Example/IntegrationTestCase.php" />
-        <option value="$PROJECT_DIR$/tests/integration/bootstrap.php" />
         <option value="$PROJECT_DIR$/tests/Training/Example/TestCase.php" />
-        <option value="$PROJECT_DIR$/tests/integration/Training/Example/Dispatch/HomeTest.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/tests/unit/boostrap.php" />
         <option value="$PROJECT_DIR$/tests/integration/phpunit-integration.xml" />
-        <option value="$PROJECT_DIR$/tests/unit/phpunit-unit.xml" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/tests/Example/TestFramework/Controller/Response/Http.php" />
+        <option value="$PROJECT_DIR$/tests/Example/TestFramework/Config.php" />
+        <option value="$PROJECT_DIR$/tests/Example/TestFramework/TestCase.php" />
+        <option value="$PROJECT_DIR$/tests/integration/bootstrap.php" />
+        <option value="$PROJECT_DIR$/tests/integration/Example/TestFramework/TestCase.php" />
+        <option value="$PROJECT_DIR$/tests/integration/Training/Example/Dispatch/HomeTest.php" />
+        <option value="$PROJECT_DIR$/tests/unit/phpunit-unit.xml" />
         <option value="$PROJECT_DIR$/tests/integration/Training/Example/Helper/DataTest.php" />
       </list>
     </option>
@@ -305,6 +270,10 @@
               <option name="myItemId" value="tests" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="integration" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -321,6 +290,100 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="integration" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Training" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Example" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="magento1-testing-using-phpunit.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="magento1-testing-using-phpunit.local" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tests" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="integration" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Training" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Example" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Helper" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="magento1-testing-using-phpunit.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="magento1-testing-using-phpunit.local" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tests" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="integration" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Training" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Example" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Dispatch" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="magento1-testing-using-phpunit.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="magento1-testing-using-phpunit.local" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tests" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="integration" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Example" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TestFramework" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -357,19 +420,20 @@
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/Languages" value="PHP" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/tests" />
-      <recent name="$PROJECT_DIR$/tests/unit/Training/Example" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/www" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/tests/integration/Training/Example" />
       <recent name="$PROJECT_DIR$/tests/integration" />
       <recent name="$PROJECT_DIR$/www" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tests/integration" />
+      <recent name="$PROJECT_DIR$/tests" />
+      <recent name="$PROJECT_DIR$/tests/unit/Training/Example" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/www" />
+    </key>
   </component>
-  <component name="RunManager" selected="PHPUnit.Training_Example_DataTest (Integration)">
+  <component name="RunManager" selected="PHPUnit.Training_Example_DataTest (Unit)">
     <configuration default="false" name="Training_Example_DataTest (Integration)" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Training_Example_DataTest" configuration_file="$PROJECT_DIR$/tests/integration/phpunit-integration.xml" directory="$PROJECT_DIR$/tests/integration" file="$PROJECT_DIR$/tests/integration/Training/Example/Helper/DataTest.php" scope="Class" use_alternative_configuration_file="true" />
       <method />
@@ -409,7 +473,7 @@
       <method />
     </configuration>
     <configuration default="false" name="Training_Example_DataTest (Unit)" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
-      <TestRunner class="Training_Example_DataTest" configuration_file="$PROJECT_DIR$/tests/unit/phpunit-unit.xml" directory="$PROJECT_DIR$/tests/integration" file="$PROJECT_DIR$/tests/unit/Training/Example/Helper/DataTest.php" use_alternative_configuration_file="true" />
+      <TestRunner class="Training_Example_DataTest" configuration_file="$PROJECT_DIR$/tests/unit/phpunit-unit.xml" directory="$PROJECT_DIR$/tests/unit" file="$PROJECT_DIR$/tests/unit/Training/Example/Helper/DataTest.php" use_alternative_configuration_file="true" />
       <method />
     </configuration>
     <list size="2">
@@ -426,34 +490,34 @@
     <option name="remove_strategy" value="false" />
   </component>
   <component name="TestHistory">
-    <history-entry file="Training_Example_DataTest_(Integration) - 2017.03.06 at 16h 27m 34s.xml">
+    <history-entry file="Training_Example_DataTest_(Integration) - 2017.03.06 at 17h 16m 19s.xml">
       <configuration name="Training_Example_DataTest (Integration)" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="Training_Example_DataTest_(Integration) - 2017.03.06 at 16h 28m 18s.xml">
+    <history-entry file="Training_Example_DataTest_(Integration) - 2017.03.06 at 17h 24m 54s.xml">
       <configuration name="Training_Example_DataTest (Integration)" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="Training_Example_DataTest_(Integration) - 2017.03.06 at 16h 40m 09s.xml">
+    <history-entry file="Training_Example_DataTest_(Integration) - 2017.03.06 at 17h 25m 17s.xml">
       <configuration name="Training_Example_DataTest (Integration)" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="Training_Example_DataTest_(Integration) - 2017.03.06 at 16h 41m 59s.xml">
+    <history-entry file="Training_Example_DataTest_(Integration) - 2017.03.06 at 17h 25m 24s.xml">
       <configuration name="Training_Example_DataTest (Integration)" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="Training_Example_DataTest_(Unit) - 2017.03.06 at 16h 24m 23s.xml">
+    <history-entry file="Training_Example_DataTest_(Unit) - 2017.03.06 at 17h 11m 07s.xml">
       <configuration name="Training_Example_DataTest (Unit)" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="Training_Example_DataTest_(Unit) - 2017.03.06 at 16h 27m 30s.xml">
+    <history-entry file="Training_Example_DataTest_(Unit) - 2017.03.06 at 17h 11m 59s.xml">
       <configuration name="Training_Example_DataTest (Unit)" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="Training_Example_DataTest_(Unit) - 2017.03.06 at 16h 30m 15s.xml">
+    <history-entry file="Training_Example_DataTest_(Unit) - 2017.03.06 at 17h 13m 48s.xml">
       <configuration name="Training_Example_DataTest (Unit)" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="Training_Example_DataTest_(Unit) - 2017.03.06 at 16h 32m 09s.xml">
+    <history-entry file="Training_Example_DataTest_(Unit) - 2017.03.06 at 17h 14m 23s.xml">
       <configuration name="Training_Example_DataTest (Unit)" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="Training_Example_DataTest_(Unit) - 2017.03.06 at 16h 32m 24s.xml">
+    <history-entry file="Training_Example_DataTest_(Unit) - 2017.03.06 at 17h 16m 14s.xml">
       <configuration name="Training_Example_DataTest (Unit)" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="Training_Example_DataTest_(Unit) - 2017.03.06 at 16h 40m 01s.xml">
+    <history-entry file="Training_Example_DataTest_(Unit) - 2017.03.06 at 17h 25m 27s.xml">
       <configuration name="Training_Example_DataTest (Unit)" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
   </component>
@@ -462,7 +526,7 @@
     <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32935324" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32935324" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935324" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45970148" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -470,12 +534,12 @@
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3397231" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935324" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="MagicentoScripts" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36119404" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Key Promoter" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935324" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -494,7 +558,8 @@
     <MESSAGE value="Working through unit 6" />
     <MESSAGE value="Added .idea folder to git so it remembers settings" />
     <MESSAGE value="Added .idea folder to git so it remembers settings; Fixed bug with typo in name of bootstrap.php file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added .idea folder to git so it remembers settings; Fixed bug with typo in name of bootstrap.php file" />
+    <MESSAGE value="Renamed bootstrap files to use Example TestFramework namespace; Updated tests; Fix PhpStorm bug where it appends its own PHPUnit bootstrapping script to the end of the base URL" />
+    <option name="LAST_COMMIT_MESSAGE" value="Renamed bootstrap files to use Example TestFramework namespace; Updated tests; Fix PhpStorm bug where it appends its own PHPUnit bootstrapping script to the end of the base URL" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -521,19 +586,11 @@
           <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="15" />
+      <option name="time" value="19" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tests/unit/bootstrap.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="55" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/integration/Training/Example/Helper/DataTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -657,17 +714,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/unit/Training/Example/Helper/DataTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="66" selection-start-line="26" selection-start-column="66" selection-end-line="26" selection-end-column="66" />
-          <folding>
-            <element signature="e#178#196#0#PHP" expanded="false" />
-            <element signature="e#349#404#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/lib/Zend/Controller/Response/Abstract.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
@@ -712,17 +758,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Training/Example/Config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/integration/Training/Example/IntegrationTestCase.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -730,13 +770,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="49" selection-start-line="0" selection-start-column="0" selection-end-line="12" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Training/Example/Controller/Response/Http.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -785,41 +818,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/var/log/exception.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-751">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Training/Example/TestCase.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Library/Caches/PhpStorm2016.2/extResources/5ddf74fe_phpunit.xsd">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="189" column="29" selection-start-line="189" selection-start-column="24" selection-end-line="189" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/integration/Training/Example/Dispatch/HomeTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="59" selection-start-line="26" selection-start-column="59" selection-end-line="26" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/integration/bootstrap.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="3" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
           <folding />
         </state>
       </provider>
@@ -848,10 +850,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/app/code/core/Mage/Page/Block/Html/Wrapper.php">
+    <entry file="file://$PROJECT_DIR$/tests/integration/Example/TestFramework/Config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+        <state relative-caret-position="30">
+          <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/integration/Example/TestFramework/Controller/Response/Http.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="52" />
+          <folding>
+            <element signature="e#106#128#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/var/log/exception.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="5" column="151" selection-start-line="5" selection-start-column="151" selection-end-line="5" selection-end-column="151" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/var/log/system.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/integration/phpunit-integration.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
           <folding />
         </state>
       </provider>
@@ -864,18 +900,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/unit/phpunit-unit.xml">
+    <entry file="file://$PROJECT_DIR$/www/app/code/core/Mage/Page/Block/Html/Wrapper.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        <state relative-caret-position="195">
+          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/integration/phpunit-integration.xml">
+    <entry file="file://$PROJECT_DIR$/tests/integration/Training/Example/Dispatch/HomeTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+        <state relative-caret-position="165">
+          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -891,10 +927,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tests/unit/Training/Example/Helper/DataTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="31" column="58" selection-start-line="31" selection-start-column="58" selection-end-line="31" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/integration/bootstrap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tests/integration/Training/Example/Helper/DataTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="26" column="49" selection-start-line="26" selection-start-column="49" selection-end-line="26" selection-end-column="49" />
+        <state relative-caret-position="803">
+          <caret line="82" column="65" selection-start-line="82" selection-start-column="65" selection-end-line="82" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/unit/phpunit-unit.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/integration/Example/TestFramework/TestCase.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="66" column="29" selection-start-line="66" selection-start-column="29" selection-end-line="66" selection-end-column="29" />
           <folding />
         </state>
       </provider>
