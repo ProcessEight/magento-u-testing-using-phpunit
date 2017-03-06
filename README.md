@@ -21,8 +21,6 @@ To install in a different folder will require updating the paths in both `bootst
         * Class: Training_Example_DataTest
         * File: `/path/to/project/root/tests/unit/Training/Example/Helper/DataTest.php`
         * Use Alternative Configuration File: `/path/to/project/root/tests/unit/phpunit-unit.xml`
-    * Command Line:
-        * Custom Working Directory: `/path/to/project/root/tests`
         
 ### Integration tests
 
@@ -33,8 +31,6 @@ To install in a different folder will require updating the paths in both `bootst
         * Class: Training_Example_DataTest
         * File: `/path/to/project/root/tests/integration/Training/Example/Helper/DataTest.php`
         * Use Alternative Configuration File: `/path/to/project/root/tests/integration/phpunit-integration.xml`
-    * Command Line:
-        * Custom Working Directory: `/path/to/project/root/tests`
         
 ## Writing tests
 

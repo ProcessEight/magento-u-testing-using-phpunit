@@ -12,7 +12,3 @@ set_error_handler(function ($errno, $errstr, $errfile, $errline) {
 	// Delegate to the standard PHP error handler by returning false
 	return false;
 });
-
-//require_once __DIR__ . '/Training/Example/UnitTestCase.php';
-//require_once __DIR__ . '/Training/Example/Config.php';
-//Training_Example_UnitTestCase:§:resetMagento();
