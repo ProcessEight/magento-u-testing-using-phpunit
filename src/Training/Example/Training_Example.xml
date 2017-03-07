@@ -1,4 +1,5 @@
-<?php
+<?xml version="1.0"?>
+<!--
 /**
  * ProjectEight
  *
@@ -18,16 +19,12 @@
  * Testing in Magento 1
  * @link https://gist.github.com/ProjectEight/43f7bc8b0db57b88a85a1d7d74db2a83
  */
-
-// No need to initialise the Magento environment beyond the autoloader for unit tests
-require_once __DIR__ . '/../../www/app/Mage.php';
-
-set_error_handler(function ($errno, $errstr, $errfile, $errline) {
-	if(E_WARNING === $errno
-	   && 0 === strpos($errstr, 'include(')
-	   && substr($errfile, -19) == 'Varien/Autoload.php') {
-		return null;
-	}
-	// Delegate to the standard PHP error handler by returning false
-	return false;
-});
+-->
+<config>
+    <modules>
+        <Training_Example>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Training_Example>
+    </modules>
+</config>

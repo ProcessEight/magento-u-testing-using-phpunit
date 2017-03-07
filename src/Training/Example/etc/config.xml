@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * ProjectEight
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade this module to newer
+ * versions in the future. If you wish to customize this module for your
+ * needs please contact ProjectEight for more information.
+ *
+ * @category    ProjectEight
+ * @package     magento1-testing-using-phpunit.local
+ * @copyright   Copyright (c) 2017 ProjectEight
+ * @author      ProjectEight
+ *
+ */
+/**
+ * Testing in Magento 1
+ * @link https://gist.github.com/ProjectEight/43f7bc8b0db57b88a85a1d7d74db2a83
+ */
+-->
+<config>
+    <modules>
+        <Training_Example>
+            <version>0.1.0</version>
+        </Training_Example>
+    </modules>
+    <global>
+        <models>
+            <training_example>
+                <class>Training_Example_Model</class>
+                <resourceModel>training_example_resource</resourceModel>
+            </training_example>
+            <training_example_resource>
+                <class>Training_Example_Model_Resource</class>
+            </training_example_resource>
+        </models>
+        <blocks>
+            <training_example>
+                <class>Training_Example_Block</class>
+            </training_example>
+        </blocks>
+        <helpers>
+            <training_example>
+                <class>Training_Example_Helper</class>
+            </training_example>
+        </helpers>
+    </global>
+    <frontend>
+        <layout>
+            <updates>
+                <training_example>
+                    <file>training/example.xml</file>
+                </training_example>
+            </updates>
+        </layout>
+    </frontend>
+</config>

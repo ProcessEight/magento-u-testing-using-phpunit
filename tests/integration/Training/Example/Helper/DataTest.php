@@ -1,5 +1,29 @@
 <?php
+/**
+ * ProjectEight
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade this module to newer
+ * versions in the future. If you wish to customize this module for your
+ * needs please contact ProjectEight for more information.
+ *
+ * @category    ProjectEight
+ * @package     magento1-testing-using-phpunit.local
+ * @copyright   Copyright (c) 2017 ProjectEight
+ * @author      ProjectEight
+ *
+ */
+/**
+ * Testing in Magento 1
+ * @link https://gist.github.com/ProjectEight/43f7bc8b0db57b88a85a1d7d74db2a83
+ */
 
+/**
+ * Class Training_Example_DataTest
+ *
+ * Testing the Helper Data class
+ */
 class Training_Example_DataTest extends PHPUnit_Framework_TestCase
 {
 	protected $_class = 'Training_Example_Helper_Data';
@@ -80,7 +104,7 @@ class Training_Example_DataTest extends PHPUnit_Framework_TestCase
 		$value = call_user_func( array( $helper, $method ) );
 		// Fix PhpStorm bug where it appends its own PHPUnit bootstrapping script to the end of the base URL
 		$value = str_replace('ide-phpunit.php/', '', $value);
-		$expected = 'http://magento1-testing-using-phpunit.local/training/example/redirect/';
+		$expected = 'http://magento1810.local/training/example/redirect/';
 
 		$this->assertSame( $expected, $value );
 	}

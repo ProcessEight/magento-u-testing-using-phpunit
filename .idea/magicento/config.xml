@@ -6613,7 +6613,9 @@ T: {{var telephone}}
                     <file>weee.xml</file>
                 </weee><moneybookers>
                     <file>moneybookers.xml</file>
-                </moneybookers></updates>
+                </moneybookers><training_example>
+                    <file>training/example.xml</file>
+                </training_example></updates>
         </layout>
     <secure_url>
             <install>/install/wizard/checkSecureHost</install>
